@@ -100,7 +100,7 @@ public class Menu {
                         case 1 -> {
                             System.out.println("Digite o Limite de Crédito (R$): ");
                             limite = leia.nextFloat();
-                            contas.cadastrar(new ContaPoupanca(contas.gerarNumero(), agencia, tipo, titular, saldo, (int) limite));
+                            contas.cadastrar(new ContaCorrente(contas.gerarNumero(), agencia, tipo, titular, saldo, (int) limite));
                         }
                         case 2 -> {
                             System.out.println("Digite o dia do Aniversario da Conta: ");
